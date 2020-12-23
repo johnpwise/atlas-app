@@ -1,0 +1,5 @@
+  <mat-form-field>
+    <mat-label>{{inputType}}</mat-label>
+    <input *ngIf="inputType.toLowerCase() === 'password'" matInput placeholder="{{label}}" type="password" value="">
+    <input *ngIf="inputType.toLowerCase() !== 'password'" matInput placeholder="{{label}}" value="">
+  </mat-form-field>

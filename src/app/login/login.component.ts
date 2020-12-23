@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.sass']
 })
 export class LoginComponent implements OnInit {
+  username: string = "Username";
+  password: string = "Password";
 
   constructor() { }
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    // let testLabel = "Username1";
   }
+
 
 }
