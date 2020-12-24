@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from "@angular/forms";
 import { NgModule } from '@angular/core';
 
 import { MaterialModule } from "./material/material.module";
@@ -21,6 +22,7 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     NoopAnimationsModule,
     AppRoutingModule,
     MaterialModule

@@ -6,14 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.sass']
 })
 export class LoginComponent implements OnInit {
-  username: string = "Username";
-  password: string = "Password";
+  public username: string = "Username";
+  public password: string = "Password";
+  public user = {
+    username: '',
+    password: ''
+  };
 
   constructor() { }
 
   public ngOnInit(): void {
-    // let testLabel = "Username1";
   }
 
+  public handleUsername(username: string) {
+    this.user.username = username;
+  }
 
+  public handlePassword(password: string) {
+    this.user.password = password;
+  }
+
+  public doSomet(): void {
+    console.log("Username: " + this.user.username);
+    console.log("Password: " + this.user.password);
+  }
 }

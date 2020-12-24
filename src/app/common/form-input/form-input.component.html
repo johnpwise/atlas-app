@@ -1,5 +1,5 @@
   <mat-form-field>
     <mat-label>{{inputType}}</mat-label>
-    <input *ngIf="inputType.toLowerCase() === 'password'" matInput placeholder="{{label}}" type="password" value="">
-    <input *ngIf="inputType.toLowerCase() !== 'password'" matInput placeholder="{{label}}" value="">
+    <input *ngIf="inputType.toLowerCase() === 'password'" matInput placeholder="{{label}}" (keyup)="valChanged($event)" [(ngModel)]="inputValue" name="{{label}}" type="password">
+    <input *ngIf="inputType.toLowerCase() !== 'password'" matInput placeholder="{{label}}" (keyup)="valChanged($event)" [(ngModel)]="inputValue" name="{{label}}" ngDefaultControl>
   </mat-form-field>
