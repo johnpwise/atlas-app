@@ -1,5 +1,4 @@
   <mat-form-field>
     <mat-label>{{inputType}}</mat-label>
-    <input *ngIf="inputType.toLowerCase() === 'password'" matInput placeholder="{{label}}" (keyup)="valChanged($event)" [(ngModel)]="inputValue" name="{{label}}" type="password">
-    <input *ngIf="inputType.toLowerCase() !== 'password'" matInput placeholder="{{label}}" (keyup)="valChanged($event)" [(ngModel)]="inputValue" name="{{label}}" ngDefaultControl>
+    <input matInput placeholder="{{label}}" (keyup)="valChanged($event)" [(ngModel)]="inputValue" name="{{label}}" type="text">
   </mat-form-field>

@@ -1,13 +1,11 @@
-import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'app-form-input',
-  templateUrl: './form-input.component.html',
-  styleUrls: ['./form-input.component.sass']
+  selector: 'app-form-input-password',
+  templateUrl: './form-input-password.component.html',
+  styleUrls: ['./form-input-password.component.sass']
 })
-export class FormInputComponent implements OnInit {
-  formInput: any;
-
+export class FormInputPasswordComponent implements OnInit {
   @Input() label: string | undefined;
   @Input() inputType: string | undefined;
   @Output() outputValueEvent: EventEmitter<string> = new EventEmitter<string>();

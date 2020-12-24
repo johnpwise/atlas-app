@@ -11,6 +11,7 @@ import { HomeComponent } from './members/home/home.component';
 import { MemberDashboardComponent } from './members/member-dashboard/member-dashboard.component';
 import { FormInputComponent } from './common/form-input/form-input.component';
 import {NoopAnimationsModule} from "@angular/platform-browser/animations";
+import { FormInputPasswordComponent } from './common/form-input-password/form-input-password.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {NoopAnimationsModule} from "@angular/platform-browser/animations";
     LoginComponent,
     HomeComponent,
     MemberDashboardComponent,
-    FormInputComponent
+    FormInputComponent,
+    FormInputPasswordComponent
   ],
   imports: [
     BrowserModule,

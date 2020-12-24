@@ -1,21 +1,21 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormInputComponent } from './form-input.component';
+import { FormInputPasswordComponent } from './form-input-password.component';
 import {By} from "@angular/platform-browser";
 
-describe('FormInputComponent', () => {
-  let component: FormInputComponent;
-  let fixture: ComponentFixture<FormInputComponent>;
+describe('FormInputPasswordComponent', () => {
+  let component: FormInputPasswordComponent;
+  let fixture: ComponentFixture<FormInputPasswordComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormInputComponent ]
+      declarations: [ FormInputPasswordComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormInputComponent);
+    fixture = TestBed.createComponent(FormInputPasswordComponent);
     component = fixture.componentInstance;
     component.inputError = false;
     fixture.detectChanges();
@@ -25,12 +25,12 @@ describe('FormInputComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should be of type text', () => {
+  it('should be of type password', () => {
     // Arrange
     let element = fixture.debugElement.query(By.css('input')).nativeElement;
 
     // Assert
-    expect(element.type).toBe('text');
+    expect(element.type).toBe('password');
   })
 
   it('should emit event when the text input value changes', () => {
